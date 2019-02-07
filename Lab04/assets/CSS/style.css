@@ -10,6 +10,7 @@ body {
     margin-right: auto;
 }
 
+
 /* ================== */
 /* NAVIGATION BAR CSS */
 /* ================== */
@@ -38,4 +39,42 @@ nav>ul>li a {
 
 li a:hover {
     color: #363636;
+}
+
+/* ==== */
+/* TEXT */
+/* ==== */
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+/* ====== */
+/* IMAGES */
+/* ====== */
+
+#logo {
+    float:left;
+    padding-right: 20px;
+}
+
+#homePic {
+    float:left;
+    padding-right: 10px;
+}
+
+/* ====== */
+/* FOOTER */
+/* ====== */
+
+footer {
+    text-align:center;
+
 }
