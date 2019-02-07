@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+/* @import "templatecolours.css"; */
 
 /* ============================ */
 /* SIZE AND CENTRALISE THE BODY */
@@ -8,37 +9,6 @@ body {
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
-}
-
-
-/* ================== */
-/* NAVIGATION BAR CSS */
-/* ================== */
-
-/* Get rid of bullet points */
-nav>ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-/* Float each list item to the left */
-nav>ul>li {
-    float:left;
-}
-
-/* Remove underline, centre text, add padding */
-nav>ul>li a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 10px 30px;
-    text-decoration: none;
-}
-
-li a:hover {
-    color: #363636;
 }
 
 /* ==== */
@@ -51,30 +21,87 @@ h1 {
     font-size: 50px;
 }
 
-p {
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+p, ul {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
-/* ====== */
-/* IMAGES */
-/* ====== */
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
 
+
+/* ==== */
+/* HEAD */
+/* ==== */
+
+/* LOGO */
 #logo {
     float:left;
     padding-right: 20px;
 }
 
+/* NAVIGATION BAR CSS */
+
+/* Get rid of bullet points */
+nav>ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float each list item to the left */
+nav>ul>li {
+    float:left;
+    /* width: 20%; */
+}
+
+/* Remove underline, centre text, add padding */
+nav>ul>li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+li a:hover {
+    color: #363636;
+}
+
+/* ==== */
+/* MAIN */
+/* ==== */
+
+main {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
 #homePic {
     float:left;
-    padding-right: 10px;
+    padding-right: 15px;
+    padding-top: 20px;
 }
 
 /* ====== */
 /* FOOTER */
 /* ====== */
 
+hr {
+    border-width:2px;
+}
+
 footer {
     text-align:center;
-
 }
