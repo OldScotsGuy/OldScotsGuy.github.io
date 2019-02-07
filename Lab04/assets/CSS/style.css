@@ -49,6 +49,17 @@ a {
 }
 
 /* NAVIGATION BAR CSS */
+div {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
 
 /* Get rid of bullet points */
 nav>ul {
@@ -61,12 +72,13 @@ nav>ul {
 /* Float each list item to the left */
 nav>ul>li {
     float:left;
-    /* width: 20%; */
+    width: 20%;
 }
 
 /* Remove underline, centre text, add padding */
 nav>ul>li a {
     display: block;
+    /* height: 40px; */
     color: black;
     text-align: center;
     padding: 5px;
