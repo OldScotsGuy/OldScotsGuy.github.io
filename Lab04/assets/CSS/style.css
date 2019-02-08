@@ -99,6 +99,12 @@ nav>li>a:hover {
     color: #363636;
 }
 
+@media screen and (max-width: 800px) {
+    nav ul li {border-right: 2px solid black;}
+    /* nav ul li.right, */
+    nav ul li {float: none;}
+}
+
 /* ==== */
 /* MAIN */
 /* ==== */
