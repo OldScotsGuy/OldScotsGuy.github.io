@@ -37,7 +37,7 @@ class cheesePage
 
     public function DisplayHead() {
         echo "<head>\n";
-        echo "<meta charset=\"UTF-8\" name=\"keywords\" content=\"".$keywords."\"/>";
+        echo "<meta charset=\"UTF-8\" name=\"keywords\" content=\"".$this->keywords."\"/>";
         echo "<title>".$this->title."</title>";
         ?>
         <link href="assets/CSS/styles.css" type="text/css" rel="stylesheet">
