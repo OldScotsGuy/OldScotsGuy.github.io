@@ -8,7 +8,9 @@
 
 require("objects/cheesePage.php");
 
-$HelpWithCheese = new \pages\cheesePage();
+if (!isset($HelpWithCheese)) {
+    $HelpWithCheese = new \pages\cheesePage();
+}
 
 $HelpWithCheese->content = '
 
@@ -42,6 +44,8 @@ $HelpWithCheese->content = '
                     </section>
                     <input type="submit" value="Submit"/>
                 </form>';
+
+$HelpWithCheese->title ="Help With Cheese";
 
 $HelpWithCheese->Display();
 

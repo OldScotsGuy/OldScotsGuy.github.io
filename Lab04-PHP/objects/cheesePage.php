@@ -10,7 +10,7 @@ namespace pages;
 
 class cheesePage
 {
-    // class Page's attributes
+    // Cheese Page's Default Attributes
     public $content;
     public $title = "World of Cheese";
     public $keywords = "Cheese";

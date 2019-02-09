@@ -8,9 +8,11 @@
 
 require("objects/cheesePage.php");
 
-$HomePage = new \pages\cheesePage();
+if (!isset($BestCheeseJokes)) {
+    $BestCheeseJokes = new \pages\cheesePage();
+}
 
-$HomePage->content = "
+$BestCheeseJokes->content = "
             <section class=\"grid-100\">
             <h2>The Best Cheese Jokes</h2>
             </section>
@@ -30,6 +32,8 @@ $HomePage->content = "
             <p>At the end of the night all that is left is deBrie</p>
             </section>";
 
-$HomePage->Display();
+$BestCheeseJokes->title = "Probably The Best Cheese Jokes in the World";
+
+$BestCheeseJokes->Display();
 
 ?>
