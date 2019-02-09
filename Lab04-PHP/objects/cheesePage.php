@@ -14,9 +14,9 @@ class cheesePage
     public $content;
     public $title = "World of Cheese";
     public $keywords = "Cheese";
-    public $buttons = array("Hone"   => "index.php",
+    public $buttons = array("Home"   => "index.php",
                             "The History of Cheese"  => "HistoryOfCheese.php",
-                            "My Favourite Cheese" => "MyFavouriteCheese.php",
+                            "My Favourite Cheese" => "FavouriteCheese.php",
                             "Best Cheese Jokes" => "BestCheeseJokes.php",
                             "Help With Cheese" => "HelpWithCheese.php"
     );
@@ -40,7 +40,7 @@ class cheesePage
         echo "<meta charset=\"UTF-8\" name=\"keywords\" content=\"".$this->keywords."\"/>";
         echo "<title>".$this->title."</title>";
         ?>
-        <link href="assets/CSS/styles.css" type="text/css" rel="stylesheet">
+        <link href="assets/CSS/style.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="assets/CSS/unsemantic-grid-responsive-tablet.css">
         <?php
         echo "</head>\n";
@@ -66,8 +66,9 @@ class cheesePage
             <nav class="grid-100">
                 <ul>
         <?php
-        while (list($name, $url) = each($buttons)) {
-            echo "<li><a href=\"<?=$url?>\"><div><span><?=$name?></span></div></a></li> ";
+        reset($this->buttons);
+        foreach ($this->buttons as $name => $url) {
+            echo "<li><a href=\"".$url."\"><div><span>".$name."</span></div></a></li> ";
         }
         ?>
                 </ul>
@@ -77,7 +78,9 @@ class cheesePage
     }
 
     public function DisplayMain() {
+        echo "<main class=\"grid-container\">";
         echo $this->content;
+        echo "</main>";
     }
 
     public function DisplayFooter()
