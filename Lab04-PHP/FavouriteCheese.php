@@ -10,8 +10,8 @@ require("objects/cheesePage.php");
 
 $FavouriteCheese = new \pages\cheesePage();
 
-$FavouriteCheese->content = "
-            <section class=\"grid-100\">
+$FavouriteCheese->content = '
+            <section class="grid-100">
             <h2>My Favourite Cheese</h2>
             <p>My favourite cheeses in order are:</p>
             <ul>
@@ -19,7 +19,7 @@ $FavouriteCheese->content = "
                 <li>Brie</li>
                 <li>Gouda</li>
             </ul>
-            </section>";
+            </section>';
 
 $FavouriteCheese->Display();
 

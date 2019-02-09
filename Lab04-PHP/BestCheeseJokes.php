@@ -16,17 +16,17 @@ $HomePage->content = "
             </section>
             
             <section class=\"grid-33\">
-            <img src=\"assets/images/gouda.png\" alt=\"Gouda Cheese\" />
+            <img src=\"assets/images/gouda.png\" alt=\"Gouda Cheese\" width =\"300\" height=\"200\" />
             <p>Some cheese maybe feta than this, but this one is still quite gouda</p>
             </section>
             
             <section class=\"grid-33\">
-            <img src=\"assets/images/mascarpone.png\" alt=\"Mascarpone Cheese\" />
+            <img src=\"assets/images/mascarpone.png\" alt=\"Mascarpone Cheese\" width =\"300\" height=\"200\" />
             <p>This cheese is really good if you are looking to hide livestock</p>
             </section>
 
             <section class=\"grid-33\">
-            <img src=\"assets/images/brie.png\" alt=\"Brie Cheese\" />
+            <img src=\"assets/images/brie.png\" alt=\"Brie Cheese\" width =\"300\" height=\"200\" />
             <p>At the end of the night all that is left is deBrie</p>
             </section>";
 
