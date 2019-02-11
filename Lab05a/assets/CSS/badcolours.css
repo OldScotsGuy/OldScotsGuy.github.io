@@ -1,0 +1,23 @@
+header {
+    background-color: red;
+}
+
+nav {
+    background-color: yellow;
+}
+
+ main {
+    background-color: orange;
+}
+
+article {
+    background-color: green;
+}
+
+section {
+    background-color: blue;
+}
+
+footer {
+    background-color: purple;
+}
