@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Superhero Application Form</h2>
+<form action="superHeroSummary.php" method="post">
+    <label for="firstname">Enter your first name</label>
+    <input type="text" name="firstname" id="firstname" size="20" maxsize="20" required>
+    <br/><br/>
+
+    <label for="lastname">Enter your first name</label>
+    <input type="text" name="lastname" id="lastname" size="20" maxsize="20" required>
+    <br/><br/>
+
+    <p>Enter Gender</p>
+    <input type="radio" name="gender" id="male" value="Male"/>
+    <label for="male">Male</label>
+    <br/>
+
+    <input type="radio" name="gender" id="female" value="Female"/>
+    <label for="female">Female</label>
+    <br/><br/>
+
+    <textarea name="superpower" id="superpower" rows="5" cols="40" required>Enter superpower details here</textarea>
+    <br/><br/>
+
+    <input type="submit" value="Submit Application"/>
+</form>
+
+
+</body>
+</html>
