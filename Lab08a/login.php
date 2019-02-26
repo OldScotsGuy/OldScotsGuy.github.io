@@ -1,4 +1,5 @@
 <?php
+session_start();
 /**
  * Created by PhpStorm.
  * User: 1813014
@@ -19,7 +20,9 @@ if (empty($_POST['username']) || empty($_POST['password'])) {
     $result = mysqli_query($db,$sql);
 
     if(mysqli_num_rows($result) == 1) {
-        header("location: home.php");
+        $_SESSION['username'] = $username;
+        $_SESSION['password'] = $password;
+        header("Location: home.php");
     } else {
         echo "Incorrect username and password.";
     }
