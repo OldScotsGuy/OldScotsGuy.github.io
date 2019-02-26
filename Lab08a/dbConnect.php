@@ -6,7 +6,8 @@
  * Time: 10:20
  */
 
-define('DB_SERVER', 'CSDM-WEBDEV');
+//define('DB_SERVER', 'CSDM-WEBDEV');
+define('DB_SERVER', 'localhost');
 define('DB_USERNAME', '1813014');
 define('DB_PASSWORD', '1813014');
 define('DB_DATABASE', 'db1813014_cmm007');
