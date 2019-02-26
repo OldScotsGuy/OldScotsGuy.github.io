@@ -6,7 +6,6 @@ session_start();
  * Date: 25/02/2019
  * Time: 11:52
  */
-
 include("dbConnect.php");
 
 if (empty($_POST['username']) || empty($_POST['password'])) {
@@ -24,7 +23,7 @@ if (empty($_POST['username']) || empty($_POST['password'])) {
         $_SESSION['password'] = $password;
         header("Location: home.php");
     } else {
-        echo "Incorrect username and password.";
+        echo "<h1>Incorrect username and password.</h1>";
     }
 }
 
