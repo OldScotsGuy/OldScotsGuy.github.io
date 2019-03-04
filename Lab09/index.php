@@ -21,10 +21,10 @@
         $query = "SELECT * FROM superheros";
         $result = $db->query($query);
         while ($row = $result->fetch_array()) {
-            $firstname = $row['firstname'];
-            $lastname = $row['lastname'];
+            $firstName = $row['firstName'];
+            $lastName = $row['lastName'];
             $id = $row['superheroID'];
-            echo '<li><a href="displayBattles.php?id=' . $id . '">Battles for ' . $firstname . ' ' . $lastname . '</a></li>';
+            echo '<li><a href="displayBattles.php?id=' . $id . '">Battles for ' . $firstName . ' ' . $lastName . '</a></li>';
         }
         ?>
     </ul>
